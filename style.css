@@ -1,0 +1,53 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+.swiper {
+  width: 100%;
+  height: 721px;
+
+  /* padding: 30px 0px; */
+}
+.swiper-slide {
+  width: 661px;
+  height: 661px !important;
+}
+/* .swiper-pagination {
+  bottom: 5px !important;
+  top: 650px !important;
+  z-index: 999;
+}  */
+.swiper-pagination {
+  height: 10px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: black;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* CSS rules for large screens */
+  .ball_one {
+    right: 694px;
+  }
+  .ball_two {
+    right: 38px;
+  }
+}
+.dropdown-content {
+  display: none;
+}
+@media (min-width: 1200px) {
+  /* CSS rules for extra large screens */
+  .ball_one {
+    right: 696px;
+  }
+  .ball_two {
+    right: 38px;
+  }
+  .ball_about_one {
+    top: 11px;
+    left: 105px;
+  }
+  .ball_about_two {
+    top: 330px;
+    left: 75px;
+  }
+}

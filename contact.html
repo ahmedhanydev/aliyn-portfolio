@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo2.png" type="image/png" />
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aliyn</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("g-22tMlz-RPIdzfUS");
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="">
+      <!-- navbar big -->
+      <nav
+        class="navbar_big bg-transparent fixed top-0 right-0 left-0 pt-[54px]"
+      >
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu1"
+                id="button-menu1"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+      Icon when menu is closed.
+
+      Menu open: "hidden", Menu closed: "block"
+    -->
+                <svg
+                  class="block h-6 w-6 open_icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+      Icon when menu is open.
+
+      Menu open: "block", Menu closed: "hidden"
+    -->
+                <svg
+                  class="hidden h-6 w-6 close_icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="w-full flex justify-between items-center">
+              <div class="flex flex-shrink-0 items-center">
+                <a href="./index.html" class="flex ml-16 lg:ml-0">
+                  <img
+                    class="w-[50px] h-[50px] lg:w-[77px] lg:h-[70px]"
+                    src="./assets/images/logo2.png"
+                    alt="Aliyn"
+                  />
+                  <div
+                    class="text-black text-base lg:text-2xl font-normal font-['Milonga']"
+                  >
+                    Aliyn <br />Software House
+                  </div>
+                </a>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex justify-center items-center gap-[10px]">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="./index.html"
+                    aria-current="page"
+                    class="w-[140px] h-[62px] hover:bg-red-700 text-black hover:text-white flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                  >
+                    <span class="text-xl font-bold font-['Red Hat Display']">
+                      Projects
+                    </span>
+                  </a>
+                  <a
+                    href="./index.html"
+                    class="w-[140px] h-[62px] hover:bg-red-700 text-black hover:text-white flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                  >
+                    <span class="text-xl font-bold font-['Red Hat Display']">
+                      Process
+                    </span>
+                  </a>
+                  <a
+                    href="./about.html"
+                    class="w-[140px] h-[62px] hover:bg-red-700 text-black hover:text-white flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                  >
+                    <span class="text-xl font-bold font-['Red Hat Display']">
+                      About
+                    </span>
+                  </a>
+
+                  <!-- <a
+                href="#process"
+                class="text-white text-[13px] font-semibold font-['Inter']"
+                >Process</a
+              > -->
+                  <!-- <a
+                href="./about.html"
+                class="text-white text-[13px] font-semibold font-['Inter']"
+                >About</a
+              > -->
+                </div>
+              </div>
+              <!-- <div
+            class="w-[100px] h-[40px] lg:w-[149px] lg:h-[51px] py-4 rounded-2xl border border-white justify-center items-center gap-2.5 inline-flex"
+          >
+            <a
+              href="./contact.html"
+              class="text-white text-base font-semibold font-['Inter']"
+            >
+              Contact us
+            </a>
+          </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden" id="mobile-menu1">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="./index.html"
+              class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >Projects</a
+            >
+            <a
+              href="./index.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Process</a
+            >
+            <a
+              href="./about.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- navbar small -->
+      <nav
+        class="navbar_small hidden justify-center fixed top-10 right-0 left-0 z-[100]"
+      >
+        <div
+          class="relative w-[447px] h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 inline-flex"
+        >
+          <div class="px-2 sm:px-6 lg:px-8">
+            <div class="flex h-14 items-center">
+              <div class="absolute top-[0px] left-[20px] flex sm:hidden">
+                <!-- Mobile menu button-->
+                <button
+                  type="button"
+                  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu2"
+                  id="button-menu2"
+                  aria-expanded="false"
+                >
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <!--
+      Icon when menu is closed.
+
+      Menu open: "hidden", Menu closed: "block"
+    -->
+                  <svg
+                    class="block h-6 w-6 open_icon_two"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                  <!--
+      Icon when menu is open.
+
+      Menu open: "block", Menu closed: "hidden"
+    -->
+                  <svg
+                    class="hidden h-6 w-6 close_icon_two"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="flex flex-1 gap-[200px] items-center sm:items-stretch sm:justify-start"
+              >
+                <div class="hidden sm:ml-6 sm:block">
+                  <div
+                    class="flex space-x-3 justify-center items-center gap-[25px]"
+                  >
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a
+                      href="./index.html"
+                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                      aria-current="page"
+                      >Projects</a
+                    >
+                    <a
+                      href="./index.html"
+                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                      >Process</a
+                    >
+                    <a
+                      href="./about.html"
+                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                      >About</a
+                    >
+                    <a
+                      href="./contact.html"
+                      class="w-[101px] h-7 px-4 py-1.5 bg-red-700 rounded-2xl justify-center items-center gap-2.5 inline-flex text-white text-[13px] font-semibold font-['Inter']"
+                    >
+                      Contact us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <div class="hidden w-full" id="mobile-menu2">
+            <div
+              class="space-y-1 relative z-[100] bg-gray-100 border-2 border-black-700 pt-[20px] px-2 pb-3 w-full mr-[50px] mt-[205px]"
+            >
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="./index.html"
+                class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                aria-current="page"
+                >Projects</a
+              >
+              <a
+                href="./index.html"
+                class="text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >Process</a
+              >
+              <a
+                href="./about.html"
+                class="text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >About</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="w-full flex flex-col gap-2 justify-center pl-[70px] lg:pl-0 items-center pt-[225px]"
+      >
+        <p
+          class="text-red-700 text-[28px] font-semibold font-['Red Hat Display'] tracking-wide"
+        >
+          let’s create something together
+        </p>
+        <p
+          class="pt-[40px] pl-[97px] pb-[100px] text-black text-6xl font-normal font-['Red Hat Display']"
+        >
+          let’s chat<br />Tell me about your project.
+        </p>
+      </div>
+      <!-- form -->
+      <div
+        class="flex min-h-full mb-[270px] flex-col items-center justify-center px-6 py-12 lg:px-8"
+      >
+        <form class="space-y-6">
+          <div>
+            <label
+              for="nameInput"
+              class="text-zinc-800 text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              >Full name *</label
+            >
+            <div class="mt-2">
+              <input
+                id="nameInput"
+                name="fullName"
+                type="text"
+                required
+                placeholder="Enter You Name"
+                class="w-full lg:w-[716px] px-4 h-20 bg-white rounded-[20px] border border-neutral-300"
+              />
+            </div>
+          </div>
+          <div class="pt-[10px]">
+            <label
+              for="emailInput"
+              class="text-zinc-800 text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              >Your email *</label
+            >
+            <div class="mt-2">
+              <input
+                id="emailInput"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="Enter your email address"
+                required
+                class="w-full lg:w-[716px] px-4 h-20 bg-white rounded-[20px] border border-neutral-300"
+              />
+            </div>
+          </div>
+          <div class="pt-[10px]">
+            <label
+              for="phone"
+              class="text-zinc-800 text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              >Phone Number</label
+            >
+            <div class="relative mt-2 rounded-md shadow-sm">
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                class="w-full lg:w-[716px] py-1.5 pl-16 pr-20 h-20 bg-white rounded-[20px] border border-neutral-300"
+                placeholder="Your phone number"
+              />
+              <div class="absolute inset-y-0 left-0 flex items-center">
+                <label for="country" class="sr-only">phone country</label>
+                <select
+                  id="country_select"
+                  name="country"
+                  class="h-full rounded-md border-0 bg-transparent py-0 pl-2 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                >
+                  <option value="20">EG</option>
+                  <option value="966">SA</option>
+                  <option value="971">AE</option>
+                  <option value="974">QA</option>
+                  <option value="962">JO</option>
+                  <option value="963">SY</option>
+                  <option value="964">IQ</option>
+                  <option value="212">MA</option>
+                  <option value="91">IN</option>
+                  <option value="1">US</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="pt-[10px]">
+            <label
+              for="company"
+              class="text-zinc-800 text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              >Company name *</label
+            >
+            <div class="mt-2">
+              <input
+                id="company"
+                name="company"
+                type="text"
+                required
+                placeholder="Your Company Name Here"
+                class="bg-white w-full lg:w-[716px] px-4 h-20 rounded-[20px] border border-neutral-300"
+              />
+            </div>
+          </div>
+          <div class="pt-[10px]">
+            <label
+              for="message"
+              class="text-zinc-800 text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              >Message *</label
+            >
+            <div class="mt-2">
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                required
+                class="px-4 pt-4 resize-none w-full bg-white rounded-[20px] border border-neutral-300"
+                placeholder="Tell us about your project"
+              ></textarea>
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end pt-10">
+            <button
+              type="submit"
+              class="flex w-full lg:w-1/2 h-[70px] px-[100px] py-6 bg-red-700 rounded-[18px] border-2 border-red-700 justify-center items-center gap-2.5 inline-flex text-white text-lg font-semibold font-['Inter']"
+            >
+              Send Massage
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- footer -->
+    </div>
+    <div
+      class="w-auto z-[0] overflow-hidden h-full lg:h-[429px] bg-red-700 relative"
+    >
+      <div class="lg:w-full hidden lg:flex">
+        <div class="absolute z-[1] bottom-[-120px] right-[0px]">
+          <img src="./assets/images/footerimage2.png" alt="" />
+        </div>
+      </div>
+      <div class="hidden lg:flex absolute z-[1] bottom-[21px] left-[-400px]">
+        <img src="./assets/images/footerimage1.png" alt="" />
+      </div>
+      <div
+        class="flex justify-center flex-col items-center lg:items-center py-[100px] lg:py-0 lg:pt-[80px]"
+      >
+        <p
+          class="text-white text-6xl font-normal font-['Red Hat Display'] capitalize"
+        >
+          No one can achieve success,<br />without interest in work.
+        </p>
+      </div>
+
+      <div
+        class="w-auto h-auto md:pt-[50px] flex pb-[75px] items-end justify-center"
+      >
+        <div class="flex flex-col md:flex-row justify-between gap-[46px]">
+          <a
+            href="mailto:Alyinsoftwarehouse@gmail.com"
+            target="_blank"
+            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+          >
+            <i
+              class="fa-solid fa-envelope text-[48px] text-white hover:text-[#000]"
+            ></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/aliyn/"
+            target="_blank"
+            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+          >
+            <i
+              class="fa-brands fa-linkedin text-[48px] text-white hover:text-[#0077B5]"
+            ></i>
+          </a>
+          <a
+            href="https://wa.me/201004673894"
+            target="_blank"
+            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+          >
+            <i
+              class="fa-brands fa-square-whatsapp text-[48px] text-white hover:text-[#25D366]"
+            ></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=100094593168418&mibextid=LQQJ4d"
+            target="_blank"
+            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+          >
+            <i
+              class="text-[48px] fa-brands fa-square-facebook text-white hover:text-[#4267B2]"
+            ></i>
+          </a>
+          <a
+            href="https://instagram.com/aliyn_softwarehouse?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+          >
+            <i
+              class="text-[48px] fa-brands fa-instagram text-white hover:text-[#C13584]"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/contact.js"></script>
+    <script src="./js/nav.js"></script>
+  </body>
+</html>

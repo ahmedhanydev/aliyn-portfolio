@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo2.png" type="image/png" />
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400;700;900&family=Milonga&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Red+Hat+Display:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aliyn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="">
+      <!-- navbar big -->
+      <nav
+        class="navbar_big fixed top-0 right-0 z-[150] left-0 pt-[54px] mb-[100px]"
+      >
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu1"
+                id="button-menu1"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+          Icon when menu is closed.
+
+          Menu open: "hidden", Menu closed: "block"
+        -->
+                <svg
+                  class="block h-6 w-6 open_icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+          Icon when menu is open.
+
+          Menu open: "block", Menu closed: "hidden"
+        -->
+                <svg
+                  class="hidden h-6 w-6 close_icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="w-full flex justify-between items-center">
+              <div class="flex flex-shrink-0 items-center">
+                <a href="./index.html" class="flex ml-16 lg:ml-0">
+                  <img
+                    class="w-[50px] h-[50px] lg:w-[77px] lg:h-[70px]"
+                    src="./assets/images/logo2.png"
+                    alt="Aliyn"
+                  />
+                  <div
+                    class="text-black text-base lg:text-2xl font-normal font-['Milonga']"
+                  >
+                    Aliyn <br />Software House
+                  </div>
+                </a>
+              </div>
+              <div class="hidden sm:ml-6 flex sm:block">
+                <div
+                  class="flex space-x-3 justify-center items-center gap-[25px]"
+                >
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="./index.html"
+                    class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                    aria-current="page"
+                    >Projects</a
+                  >
+                  <a
+                    href="./index.html"
+                    class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                    >Process</a
+                  >
+                  <a
+                    href="./about.html"
+                    class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                    >About</a
+                  >
+                </div>
+              </div>
+              <div
+                class="w-[100px] h-[40px] lg:w-[149px] lg:h-[51px] py-4 rounded-2xl border border-black justify-center items-center gap-2.5 inline-flex"
+              >
+                <a
+                  href="./contact.html"
+                  class="text-black text-base font-semibold font-['Inter']"
+                >
+                  Contact us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden" id="mobile-menu1">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="./index.html"
+              class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >Projects</a
+            >
+            <a
+              href="./index.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Process</a
+            >
+            <a
+              href="./about.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- navbar small -->
+      <nav
+        class="navbar_small hidden flex justify-center sticky top-10 right-0 left-0 z-[150]"
+      >
+        <div
+          class="relative w-[447px] h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 inline-flex"
+        >
+          <div class="px-2 sm:px-6 lg:px-8">
+            <div class="flex h-14 items-center">
+              <div class="absolute top-[0px] left-[20px] flex sm:hidden">
+                <!-- Mobile menu button-->
+                <button
+                  type="button"
+                  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu2"
+                  id="button-menu2"
+                  aria-expanded="false"
+                >
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <!--
+          Icon when menu is closed.
+
+          Menu open: "hidden", Menu closed: "block"
+        -->
+                  <svg
+                    class="block h-6 w-6 open_icon_two"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                  <!--
+          Icon when menu is open.
+
+          Menu open: "block", Menu closed: "hidden"
+        -->
+                  <svg
+                    class="hidden h-6 w-6 close_icon_two"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="flex flex-1 gap-[200px] items-center sm:items-stretch sm:justify-start"
+              >
+                <div class="hidden sm:ml-6 flex sm:block">
+                  <div
+                    class="flex space-x-3 justify-center items-center gap-[25px]"
+                  >
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a
+                      href="./index.html"
+                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                      aria-current="page"
+                      >Projects</a
+                    >
+                    <a
+                      href="./index.html"
+                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                      >Process</a
+                    >
+                    <a
+                      href="./about.html"
+                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
+                      >About</a
+                    >
+                    <a
+                      href="./contact.html"
+                      class="w-[101px] h-7 px-4 py-1.5 bg-red-700 rounded-2xl justify-center items-center gap-2.5 inline-flex text-white text-[13px] font-semibold font-['Inter']"
+                    >
+                      Contact us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <div class="hidden w-full" id="mobile-menu2">
+            <div
+              class="space-y-1 relative z-[100] bg-gray-100 border-2 border-black-700 pt-[20px] px-2 pb-3 w-full mr-[50px] mt-[205px]"
+            >
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="./index.html"
+                class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                aria-current="page"
+                >Projects</a
+              >
+              <a
+                href="./index.html"
+                class="text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >Process</a
+              >
+              <a
+                href="./about.html"
+                class="text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >About</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="w-full h-full flex justify-center">
+        <div
+          class="w-full h-auto mt-[70px] lg:mt-0 lg:w-[1240px] lg:h-[697px] flex justify-center"
+        >
+          <img
+            src="./assets/images/projects/project4.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="mt-[80px] lg:ml-[50px]">
+        <h1 class="text-black text-6xl font-normal font-['Merriweather']">
+          Note App
+        </h1>
+        <p
+          class="lg:w-[516px] text-neutral-400 text-6xl font-normal font-['Merriweather']"
+        >
+          Watch App
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center mt-[162px]">
+        <div class="flex flex-col">
+          <h3
+            class="text-black text-sart ml-[20px] lg:ml-0 text-3xl font-normal font-['Merriweather']"
+          >
+            Summary
+          </h3>
+          <p
+            class="lg:w-[682px] mt-[39px] ml-[50px] lg:ml-[30px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+          >
+            A To-Do List App is a digital tool that helps you organize and
+            manage your tasks more efficiently. It allows you to create a list
+            of tasks that you need to complete within a certain timeframe.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center my-[160px]">
+        <div>
+          <h3
+            class="text-black text-sart text-3xl font-normal font-['Merriweather']"
+          >
+            Features
+          </h3>
+          <div class="lg:w-[682px] flex flex-col lg:flex-row gap-x-[105px]">
+            <ul class="mt-[39px] ml-[30px] list-disc">
+              <li
+                class="lg:w-[314px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+              >
+                Native Watch Design
+              </li>
+              <li
+                class="w-[314px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+              >
+                Watch App Icon
+              </li>
+              <li
+                class="w-[314px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+              >
+                High-Quality Language
+              </li>
+            </ul>
+            <ul class="mt-[39px] ml-[30px] list-disc">
+              <li
+                class="w-[314px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+              >
+                Uniform Design Language
+              </li>
+              <li
+                class="w-[314px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+              >
+                Custom Button
+              </li>
+              <li
+                class="w-[314px] text-black text-xl font-normal font-['Red Hat Display'] tracking-tight"
+              >
+                Modern App Design
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center my-[160px]">
+        <div>
+          <h3
+            class="text-center lg:text-start text-black lg:ml-[55px] text-3xl font-normal font-['Merriweather']"
+          >
+            App Video
+          </h3>
+          <div class="w-full flex justify-center">
+            <div class="relative w-[889px] h-[900px]">
+              <img
+                src="./assets/images/watch.png"
+                class="w-full h-full"
+                alt=""
+              />
+              <video
+                width="280"
+                class="absolute top-[275px] left-[300px] rounded-[75px]"
+                height="20"
+                autoplay
+              >
+                <source src="./assets/videos/project4.mp4" type="video/mp4" />
+
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mx-[20px] lg:mx-[100px] mb-[160px]">
+        <div class="flex justify-between">
+          <a
+            href="./project3.html
+            "
+            class="w-[155px] lg:w-[255px] h-[55px] lg:px-12 py-[18px] rounded-2xl border border-black justify-center items-center gap-2.5 inline-flex text-black text-base font-semibold font-['Inter']"
+          >
+            Pervious Project
+          </a>
+          <a
+            href="./project5.html
+            "
+            class="w-[155px] lg:w-[255px] h-[55px] lg:px-12 py-[18px] rounded-2xl border border-black justify-center items-center gap-2.5 inline-flex text-black text-base font-semibold font-['Inter']"
+          >
+            Next Project
+          </a>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="w-auto flex flex-col h-[800px] relative bg-red-700">
+        <div
+          class="flex gap-5 my-[120px] md:my-0 md:pt-[306px] justify-center items-center"
+        >
+          <p class="text-white text-[80px] font-normal font-['Milonga']">
+            Get in touch
+          </p>
+          <img src="./assets/icons/arrowfooter.svg" alt="" />
+        </div>
+        <div class="absolute top-[0px] left-[0px]">
+          <img src="./assets/images/footerimage1.png" alt="" />
+        </div>
+        <div class="absolute top-[238px] right-[0px]">
+          <img src="./assets/images/footerimage2.png" alt="" />
+        </div>
+        <div class="w-full h-full flex items-end justify-center">
+          <div
+            class="w-1/2 flex-col md:flex-row w mb-[67px] h-full md:items-end items-center flex justify-between"
+          >
+            <a
+              href="#"
+              class="w-[70px] text-white text-2xl font-semibold font-['Montserrat']"
+              >Email</a
+            >
+            <a
+              href="#"
+              class="w-[129px] text-white text-2xl font-semibold font-['Montserrat']"
+              >Whatsapp</a
+            >
+            <a
+              href="#"
+              class="w-[128.94px] text-white text-2xl font-semibold font-['Montserrat']"
+              >Instagram</a
+            >
+            <a
+              href="#"
+              class="w-[110px] text-white text-2xl font-semibold font-['Montserrat']"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/nav.js"></script>
+  </body>
+</html>
