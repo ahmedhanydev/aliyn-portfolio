@@ -23,15 +23,15 @@
     <div class="relative">
       <!-- navbar big -->
       <nav
-        class="navbar_big bg-transparent fixed top-0 right-0 left-0 pt-[54px]"
+        class="navbar_big bg-transparent fixed top-0 right-0 left-0 pt-[15px] md:pt-[54px]"
       >
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
+            <!-- Mobile menu button-->
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
               <button
                 type="button"
-                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-red-700 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu1"
                 id="button-menu1"
                 aria-expanded="false"
@@ -39,12 +39,12 @@
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
                 <!--
-      Icon when menu is closed.
+         Icon when menu is closed.
 
-      Menu open: "hidden", Menu closed: "block"
-    -->
+         Menu open: "hidden", Menu closed: "block"
+       -->
                 <svg
-                  class="block h-6 w-6 open_icon"
+                  class="block h-8 w-8 open_icon"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -58,12 +58,12 @@
                   />
                 </svg>
                 <!--
-      Icon when menu is open.
+         Icon when menu is open.
 
-      Menu open: "block", Menu closed: "hidden"
-    -->
+         Menu open: "block", Menu closed: "hidden"
+       -->
                 <svg
-                  class="hidden h-6 w-6 close_icon"
+                  class="hidden h-8 w-8 close_icon"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -78,28 +78,31 @@
                 </svg>
               </button>
             </div>
+
             <div class="w-full flex justify-between items-center">
+              <!-- navbar big logo -->
               <div class="flex flex-shrink-0 items-center">
-                <a href="./index.html" class="flex ml-16 lg:ml-0">
+                <a href="./index.html" class="flex ml-5 lg:ml-0">
                   <img
                     class="w-[50px] h-[50px] lg:w-[77px] lg:h-[70px]"
                     src="./assets/images/logo2.png"
                     alt="Aliyn"
                   />
                   <div
-                    class="text-black text-base lg:text-2xl font-normal font-['Milonga']"
+                    class="text-black hidden md:flex text-base lg:text-2xl font-normal font-['Milonga']"
                   >
                     Aliyn <br />Software House
                   </div>
                 </a>
               </div>
+              <!-- navbar big desktop menu -->
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex justify-center items-center gap-[10px]">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
                     href="./index.html"
                     aria-current="page"
-                    class="w-[140px] h-[62px] hover:bg-red-700 text-black hover:text-white flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                    class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
                   >
                     <span class="text-xl font-bold font-['Red Hat Display']">
                       Projects
@@ -107,7 +110,7 @@
                   </a>
                   <a
                     href="./index.html"
-                    class="w-[140px] h-[62px] hover:bg-red-700 text-black hover:text-white flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                    class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
                   >
                     <span class="text-xl font-bold font-['Red Hat Display']">
                       Process
@@ -115,89 +118,76 @@
                   </a>
                   <a
                     href="./about.html"
-                    class="w-[140px] h-[62px] hover:bg-red-700 text-black hover:text-white flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                    class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
                   >
                     <span class="text-xl font-bold font-['Red Hat Display']">
                       About
                     </span>
                   </a>
-
-                  <!-- <a
-                href="#process"
-                class="text-white text-[13px] font-semibold font-['Inter']"
-                >Process</a
-              > -->
-                  <!-- <a
-                href="./about.html"
-                class="text-white text-[13px] font-semibold font-['Inter']"
-                >About</a
-              > -->
                 </div>
               </div>
-              <!-- <div
-            class="w-[100px] h-[40px] lg:w-[149px] lg:h-[51px] py-4 rounded-2xl border border-white justify-center items-center gap-2.5 inline-flex"
-          >
-            <a
-              href="./contact.html"
-              class="text-white text-base font-semibold font-['Inter']"
-            >
-              Contact us
-            </a>
-          </div> -->
             </div>
           </div>
         </div>
 
-        <!-- Mobile menu, show/hide based on menu state. -->
+        <!-- navbar big mobile menu -->
         <div class="hidden" id="mobile-menu1">
-          <div class="space-y-1 px-2 pb-3 pt-2">
+          <div
+            class="space-y-1 absolute right-4 flex gap-[20px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
+          >
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
               href="./index.html"
-              class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
               aria-current="page"
-              >Projects</a
             >
+              <span class="text-xs font-bold font-['Red Hat Display']"
+                >Projects</span
+              >
+            </a>
             <a
               href="./index.html"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-              >Process</a
+              class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
             >
+              <span class="text-xs font-bold font-['Red Hat Display']"
+                >Process</span
+              >
+            </a>
             <a
               href="./about.html"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-              >About</a
+              class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
             >
+              <span class="text-xs font-bold font-['Red Hat Display']"
+                >About</span
+              >
+            </a>
           </div>
         </div>
       </nav>
       <!-- navbar small -->
       <nav
-        class="navbar_small hidden justify-center fixed top-10 right-0 left-0 z-[100]"
+        class="navbar_small hidden justify-end md:justify-center fixed top-10 right-[10px] left-0 z-[100]"
       >
         <div
-          class="relative w-[447px] h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 inline-flex"
+          class="relative lg:w-[447px] h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 flex"
         >
           <div class="px-2 sm:px-6 lg:px-8">
-            <div class="flex h-14 items-center">
-              <div class="absolute top-[0px] left-[20px] flex sm:hidden">
+            <div class="flex h-14 items-center justify-center">
+              <!-- navbar small logo -->
+              <div class="absolute top-[6px] right-[15px] flex sm:hidden">
                 <!-- Mobile menu button-->
                 <button
                   type="button"
-                  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  class="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-gray-500 hover:text-white"
                   aria-controls="mobile-menu2"
                   id="button-menu2"
                   aria-expanded="false"
                 >
                   <span class="absolute -inset-0.5"></span>
                   <span class="sr-only">Open main menu</span>
-                  <!--
-      Icon when menu is closed.
 
-      Menu open: "hidden", Menu closed: "block"
-    -->
                   <svg
-                    class="block h-6 w-6 open_icon_two"
+                    class="block h-8 w-8 open_icon_two"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
@@ -211,12 +201,12 @@
                     />
                   </svg>
                   <!--
-      Icon when menu is open.
+         Icon when menu is open.
 
-      Menu open: "block", Menu closed: "hidden"
-    -->
+         Menu open: "block", Menu closed: "hidden"
+       -->
                   <svg
-                    class="hidden h-6 w-6 close_icon_two"
+                    class="hidden h-8 w-8 close_icon_two"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
@@ -231,6 +221,7 @@
                   </svg>
                 </button>
               </div>
+              <!-- navbar small desktop menu -->
               <div
                 class="flex flex-1 gap-[200px] items-center sm:items-stretch sm:justify-start"
               >
@@ -267,33 +258,42 @@
             </div>
           </div>
 
-          <!-- Mobile menu, show/hide based on menu state. -->
-          <div class="hidden w-full" id="mobile-menu2">
+          <!-- navbar small mobile menu  -->
+          <div class="hidden" id="mobile-menu2">
             <div
-              class="space-y-1 relative z-[100] bg-gray-100 border-2 border-black-700 pt-[20px] px-2 pb-3 w-full mr-[50px] mt-[205px]"
+              class="space-y-1 absolute right-4 top-[50px] flex gap-[20px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
             >
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a
                 href="./index.html"
-                class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
                 aria-current="page"
-                >Projects</a
               >
+                <span class="text-xs font-bold font-['Red Hat Display']"
+                  >Projects</span
+                >
+              </a>
               <a
                 href="./index.html"
-                class="text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-                >Process</a
+                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
               >
+                <span class="text-xs font-bold font-['Red Hat Display']"
+                  >Process</span
+                >
+              </a>
               <a
                 href="./about.html"
-                class="text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-                >About</a
+                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
               >
+                <span class="text-xs font-bold font-['Red Hat Display']"
+                  >About</span
+                >
+              </a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="flex justify-center mt-[202px]">
+      <div class="flex justify-center mt-[100px] lg:mt-[202px]">
         <a
           href="
         #"
@@ -312,9 +312,9 @@
           </p>
         </a>
       </div>
-      <div class="flex flex-col pl-[70px] mt-[63px]">
+      <div class="flex flex-col pl-[15px] lg:pl-[70px] mt-[63px]">
         <div
-          class="text-black text-[80px] font-medium font-['Red Hat Display'] capitalize"
+          class="text-black text-[34px] lg:text-[80px] font-medium font-['Red Hat Display'] capitalize"
         >
           <span class="">You </span>
           <span
@@ -324,55 +324,37 @@
         </div>
         <div>
           <span
-            class="text-black text-[80px] font-medium font-['Red Hat Display'] capitalize"
+            class="text-black text-[34px] lg:text-[80px] font-medium font-['Red Hat Display'] capitalize"
             >We Make IT
           </span>
           <span
-            class="text-red-700 text-[80px] font-medium font-['Red Hat Display'] capitalize"
+            class="text-red-700 text-[34px] lg:text-[80px] font-medium font-['Red Hat Display'] capitalize"
             >Happens</span
           >
         </div>
       </div>
-
       <div
-        class="z-[0] absolute top-[267px] left-[898px] w-[911px] h-[911px] rounded-full border border-red-700"
-      ></div>
-      <div class="absolute top-[390px] left-[1004px]">
-        <div
-          class="z-[0] relative top-[0px] left-[0px] w-[700.62px] h-[699.97px] rounded-full border border-red-700"
-        >
-          <div
-            class="absolute ball_about_one w-[100px] h-[100px] bg-gradient-to-b from-red-700 to-zinc-300 rounded-full"
-          ></div>
-        </div>
-      </div>
-      <div class="absolute top-[542px] left-[1151px]">
-        <div
-          class="z-[0] relative top-0 left-0 w-[396.74px] h-[396.74px] rounded-full border border-red-700"
-        >
-          <div
-            class="absolute ball_about_two w-[100px] h-[100px] bg-gradient-to-b from-red-700 to-zinc-300 rounded-full"
-          ></div>
-        </div>
+        class="absolute top-[245px] right-0 w-[304px] h-[304px] lg:w-[511px] lg:h-[911px]"
+      >
+        <img src="./assets/images/group about.png" alt="" />
       </div>
 
-      <div
-        class="absolute top-[680px] left-[240px] lg:top-[510px] lg:left-[553px] w-[1px] h-[261px] bg-neutral-200"
-      ></div>
-      <div class="flex justify-center flex-col items-center">
+      <div class="flex justify-center flex-col items-center mx-[10px] lg:mx-0">
         <div
           class="relative z-[1] mt-[200px] w-auto lg:w-[995px] h-auto bg-white rounded-3xl border-2 border-red-700"
         >
-          <div class="pt-[40px] pl-[81px] pb-[29px] border-b-2 border-red-700">
+          <div
+            class="py-[20px] lg:py-[50px] pl-[16px] lg:pl-[81px] border-b-2 border-red-700"
+          >
             <p
-              class="h-[49.39px] text-red-700 text-[26px] font-extrabold font-['Red Hat Display']"
+              class="text-red-700 text-sm lg:text-[26px] font-extrabold font-['Red Hat Display']"
             >
               Who we are
             </p>
           </div>
-          <div class="px-[40px] py-[52px]">
+          <div class="px-[16px] py-[10px] lg:px-[40px] lg:py-[52px]">
             <div
-              class="lg:w-[917px] flex flex-wrap flex-col gap-3 text-black text-xl font-normal font-['Red Hat Display']"
+              class="lg:w-[917px] flex flex-wrap flex-col gap-3 text-black text-[11px] lg:text-xl font-normal font-['Red Hat Display']"
             >
               <p>Introducing Alyyn - Your Ultimate Software House Solution</p>
               <p>
@@ -391,11 +373,11 @@
                     class="dropdown-btn flex justify-center items-center gap-2"
                     onclick="toggleDropdown(1)"
                   >
-                    1.Custom Software Development
+                    1. Custom Software Development
                     <span>
                       <img
                         src="./assets/icons/arrowbold.svg"
-                        class="arrow_dropdown-1"
+                        class="arrow_dropdown-1 w-3/4 lg:w-full"
                         alt=""
                       />
                     </span>
@@ -414,11 +396,11 @@
                     class="dropdown-btn flex justify-center items-center gap-2"
                     onclick="toggleDropdown(2)"
                   >
-                    2.Web and Mobile Application
+                    2. Web and Mobile Application
                     <span>
                       <img
                         src="./assets/icons/arrowbold.svg"
-                        class="arrow_dropdown-2"
+                        class="arrow_dropdown-2 w-3/4 lg:w-full"
                         alt=""
                       />
                     </span>
@@ -441,7 +423,7 @@
                     <span>
                       <img
                         src="./assets/icons/arrowbold.svg"
-                        class="arrow_dropdown-3"
+                        class="arrow_dropdown-3 w-3/4 lg:w-full"
                         alt=""
                       />
                     </span>
@@ -464,7 +446,7 @@
                     <span>
                       <img
                         src="./assets/icons/arrowbold.svg"
-                        class="arrow_dropdown-4"
+                        class="arrow_dropdown-4 w-3/4 lg:w-full"
                         alt=""
                       />
                     </span>
@@ -487,7 +469,7 @@
                     <span>
                       <img
                         src="./assets/icons/arrowbold.svg"
-                        class="arrow_dropdown-5"
+                        class="arrow_dropdown-5 w-3/4 lg:w-full"
                         alt=""
                       />
                     </span>
@@ -506,21 +488,23 @@
           </div>
         </div>
         <div class="flex justify-end w-1/2">
-          <div class="w-[2px] h-[160px] bg-red-700"></div>
+          <div class="w-[2px] h-[60px] lg:h-[160px] bg-red-700"></div>
         </div>
         <div
           class="w-auto h-auto relative z-[1] lg:w-[995px] lg:h-[378px] bg-white rounded-3xl border-2 border-red-700"
         >
-          <div class="pt-[40px] pl-[81px] pb-[29px] border-b-2 border-red-700">
+          <div
+            class="py-[20px] lg:py-[50px] pl-[16px] lg:pl-[81px] border-b-2 border-red-700"
+          >
             <p
-              class="text-red-700 text-[26px] font-extrabold font-['Red Hat Display']"
+              class="text-red-700 text-sm lg:text-[26px] font-extrabold font-['Red Hat Display']"
             >
               Our Vision
             </p>
           </div>
-          <div class="px-[30px] py-[50px]">
+          <div class="px-[16px] py-[10px] lg:px-[30px] lg:py-[52px]">
             <p
-              class="lg:w-[940px] text-black text-xl font-normal font-['Red Hat Display']"
+              class="lg:w-[940px] text-black text-[11px] lg:text-xl font-normal font-['Red Hat Display']"
             >
               To become a Premier Service provider by continuously achieving
               superior financial and operating results while adhering to the
@@ -529,21 +513,23 @@
           </div>
         </div>
         <div class="flex justify-start w-1/2">
-          <div class="w-[2px] h-[160px] bg-red-700"></div>
+          <div class="w-[2px] h-[60px] lg:h-[160px] bg-red-700"></div>
         </div>
         <div
           class="lg:w-[995px] relative z-[1] w-auto h-auto lg:h-[378px] bg-white rounded-3xl border-2 border-red-700"
         >
-          <div class="pt-[40px] pl-[81px] pb-[29px] border-b-2 border-red-700">
+          <div
+            class="py-[20px] lg:py-[50px] pl-[16px] lg:pl-[81px] border-b-2 border-red-700"
+          >
             <p
-              class="text-red-700 text-[26px] font-extrabold font-['Red Hat Display']"
+              class="text-red-700 text-sm lg:text-[26px] font-extrabold font-['Red Hat Display']"
             >
               Our Mission
             </p>
           </div>
-          <div class="px-[25px] py-[50px]">
+          <div class="px-[16px] py-[10px] lg:px-[25px] lg:py-[52px]">
             <p
-              class="lg:w-[940px] text-black text-xl font-normal font-['Red Hat Display']"
+              class="lg:w-[940px] text-black text-[11px] lg:text-xl font-normal font-['Red Hat Display']"
             >
               Our mission at ALIYN is to empower businesses and individuals with
               innovative software solutions. We strive to deliver top-quality
@@ -558,20 +544,24 @@
           </div>
         </div>
         <div class="flex justify-end w-1/2">
-          <div class="w-[2px] h-[160px] bg-red-700"></div>
+          <div class="w-[2px] h-[60px] lg:h-[160px] bg-red-700"></div>
         </div>
         <div
-          class="lg:w-[995px] relative z-[1] mb-[170px] h-auto md:h-[423px] bg-white rounded-3xl border-2 border-red-700"
+          class="w-auto lg:w-[995px] relative z-[1] mb-[60px] lg:mb-[170px] h-auto md:h-[423px] bg-white rounded-3xl border-2 border-red-700"
         >
-          <div class="pt-[40px] pl-[81px] pb-[29px] border-b-2 border-red-700">
+          <div
+            class="py-[20px] lg:py-[50px] pl-[16px] lg:pl-[81px] border-b-2 border-red-700"
+          >
             <p
-              class="text-red-700 text-[26px] font-extrabold font-['Red Hat Display']"
+              class="text-red-700 text-sm lg:text-[26px] font-extrabold font-['Red Hat Display']"
             >
               You
             </p>
           </div>
-          <div class="px-[85px] pt-[50px]">
-            <p class="text-black text-xl font-normal font-['Red Hat Display']">
+          <div class="px-[16px] py-[10px] lg:px-[85px] lg:pt-[50px]">
+            <p
+              class="text-black text-[11px] lg:text-xl font-normal font-['Red Hat Display']"
+            >
               Are you in need of top-notch software house services? Look no
               further than Alyin! Our cutting-edge technology and expert team
               make us the perfect partner for all your software development
@@ -579,11 +569,11 @@
             </p>
 
             <div
-              class="flex justify-center lg:justify-end pb-10 lg:pb-0 pt-8 w-full h-full"
+              class="flex justify-end lg:pb-10 pb-[20px] pt-[11px] lg:pt-8 w-full h-full"
             >
               <a
                 href="./contact.html"
-                class="w-[206px] h-[70px] px-10 py-6 text-xl hover:bg-red-700 hover:text-white font-bold font-['Red Hat Display'] rounded-[18px] text-black border-2 border-red-700 justify-center items-center gap-2.5 inline-flex"
+                class="w-[110px] h-10 px-4 py-3 lg:w-[206px] lg:h-[70px] lg:px-10 lg:py-6 text-xs lg:text-xl hover:bg-red-700 hover:text-white font-bold font-['Red Hat Display'] rounded-[18px] text-black border-2 border-red-700 justify-center items-center gap-2.5 inline-flex"
               >
                 Contact us
               </a>
@@ -593,136 +583,101 @@
       </div>
     </div>
     <!-- footer -->
-    <div class="w-auto flex flex-col h-auto lg:h-[656px] relative bg-red-700">
+    <div
+      class="w-auto flex overflow-hidden flex-col h-auto lg:h-[656px] relative bg-red-700"
+    >
       <div
-        class="flex gap-5 my-[120px] md:my-0 md:pt-[216px] justify-center items-center"
+        class="relative z-[99] flex gap-2 lg:gap-5 my-[120px] md:my-0 md:pt-[216px] justify-center items-center"
       >
-        <p class="text-white text-[80px] font-normal font-['Red Hat Display']">
+        <p
+          class="text-white text-[27px] lg:text-[80px] font-normal font-['Red Hat Display']"
+        >
           Get in touch
         </p>
         <img
           src="./assets/icons/arrowfooter.svg"
-          class="h-[77px] w-[85px]"
+          class="w-[23px] h-[21px] lg:h-[77px] lg:w-[85px]"
           alt=""
         />
       </div>
-      <div class="absolute top-0 left-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="631"
-          height="436"
-          viewBox="0 0 631 436"
-          fill="none"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M391.702 421.852L387.602 422.811L383.471 423.744L379.307 424.651L375.113 425.531L370.887 426.382L366.631 427.203L362.345 427.993L358.029 428.751L353.685 429.475L349.312 430.163L344.912 430.816L340.485 431.431L336.033 432.006L331.556 432.542L327.056 433.036L322.534 433.487L317.991 433.894L313.428 434.256L308.847 434.571L304.249 434.839L299.636 435.059L295.01 435.229L290.371 435.348L285.723 435.416L281.065 435.432L276.401 435.394L271.732 435.303L267.06 435.158L262.386 434.957L257.713 434.701L253.042 434.389L248.376 434.021L243.716 433.595L239.065 433.113L234.424 432.573L229.795 431.976L225.18 431.322L220.581 430.609L216 429.839L211.439 429.012L206.9 428.127L202.385 427.184L197.895 426.184L193.433 425.127L189.001 424.013L184.599 422.843L180.232 421.617L175.899 420.335L171.603 418.997L167.346 417.604L163.13 416.157L158.955 414.655L154.825 413.101L150.74 411.494L146.702 409.835L142.712 408.125L138.772 406.365L134.882 404.555L131.045 402.698L127.261 400.793L123.531 398.843L119.856 396.847L116.236 394.807L112.674 392.725L109.169 390.601L105.721 388.436L102.333 386.232L99.0026 383.991L95.7317 381.712L92.5203 379.398L89.3685 377.05L86.2764 374.668L83.244 372.255L80.2713 369.811L77.3581 367.337L74.5043 364.835L71.7097 362.307L68.9739 359.752L66.2965 357.172L63.6773 354.569L61.1155 351.944L58.6109 349.296L56.1627 346.629L53.7705 343.942L51.4335 341.236L49.1514 338.513L46.9234 335.773L44.7493 333.017L42.6285 330.245L40.5607 327.46L38.5456 324.66L36.5827 321.846L34.6719 319.02L32.813 316.182L31.0058 313.332L29.2502 310.471L27.5461 307.598L25.8935 304.716L24.2924 301.823L22.7427 298.92L21.2446 296.009L19.7982 293.088L18.4035 290.159L17.0607 287.221L15.7699 284.276L14.5314 281.323L13.3452 278.363L12.2116 275.396L11.1307 272.422L10.1029 269.443L9.12818 266.458L8.20674 263.467L7.33886 260.471L6.52462 257.471L5.76423 254.466L5.05783 251.457L4.4055 248.445L3.80739 245.43L3.26358 242.412L2.77415 239.392L2.33901 236.37L1.95842 233.346L1.63223 230.321L1.36038 227.295L1.14292 224.27L0.979794 221.244L0.870849 218.219L0.816047 215.195L0.815288 212.172L0.86835 209.151L0.975257 206.132L1.13579 203.116L1.34978 200.103L1.61707 197.093L1.93763 194.087L2.31116 191.085L2.73751 188.088L3.21659 185.095L3.74815 182.109L4.33199 179.127L4.96787 176.152L5.65558 173.184L6.39484 170.222L7.18547 167.267L8.02725 164.32L8.9199 161.381L9.8632 158.45L10.857 155.528L11.901 152.615L12.9949 149.712L14.1387 146.818L15.3321 143.934L16.5749 141.06L17.8671 138.198L19.2083 135.346L20.5985 132.506L22.0375 129.678L23.5252 126.862L25.0616 124.059L26.6465 121.269L28.2798 118.492L29.9616 115.729L31.6916 112.98L33.47 110.246L35.2965 107.527L37.1713 104.824L39.0942 102.136L41.0652 99.465L43.0844 96.8109L45.1517 94.1742L47.267 91.5553L49.4306 88.955L51.6423 86.3736L53.9025 83.8119L56.2115 81.2705L58.5695 78.7502L60.9768 76.2516L63.434 73.7757L65.9412 71.3232L68.499 68.8951L71.1077 66.4923L73.7678 64.1157L76.4793 61.7663L79.2429 59.4453L82.0587 57.1536L84.9269 54.8924L87.8477 52.6627L90.8212 50.4658L93.8475 48.3027L96.9265 46.1746L100.058 44.0826L103.242 42.028L106.478 40.0119L109.766 38.0354L113.105 36.0997L116.494 34.2059L119.934 32.3551L123.423 30.5484L126.96 28.7867L130.544 27.0712L134.175 25.4028L137.852 23.7825L141.572 22.2111L145.335 20.6894L149.139 19.2184L152.983 17.7987L156.866 16.431L160.785 15.116L164.739 13.8543L168.727 12.6465L172.746 11.4929L176.794 10.3941L180.871 9.35045L184.973 8.36225L189.1 7.42981L193.249 6.55337L197.418 5.73312L201.604 4.96921L205.808 4.26176L210.025 3.61085L214.254 3.01653L218.494 2.47882L222.742 1.99764L226.996 1.57286L231.254 1.20422L235.515 0.891412L239.775 0.634019L244.033 0.431544L248.287 0.283406L252.535 0.188938L256.774 0.147394L261.003 0.157949L265.219 0.2197L269.421 0.33167L273.607 0.492811L277.775 0.702006L281.923 0.958074L286.049 1.25977L290.151 1.60581L294.229 1.99482L298.28 2.42542L302.303 2.89616L306.297 3.40554L310.26 3.95206L314.192 4.53417L318.09 5.15028L321.955 5.7988L325.785 6.47813L329.579 7.18662L333.337 7.92266L337.058 8.68461L340.742 9.47085L344.388 10.2797L347.996 11.1097L351.565 11.9591L355.096 12.8264L358.589 13.71L362.043 14.6084L365.46 15.5202L368.838 16.4439L372.178 17.3782L375.482 18.3218L378.749 19.2734L381.98 20.2317L385.175 21.1958L388.335 22.1645L391.461 23.1367L394.554 24.1117L397.615 25.0883L400.644 26.066L403.642 27.0438L406.611 28.0211L409.55 28.9973L412.462 29.9719L415.347 30.9443L418.206 31.9141L421.041 32.881L423.851 33.8447L426.639 34.8049L429.405 35.7615L432.15 36.7144L434.875 37.6635L437.581 38.6089L440.269 39.5506L442.94 40.4887L445.595 41.4234L448.234 42.3549L450.859 43.2835L453.47 44.2096L456.067 45.1335L458.652 46.0555L461.225 46.9762L463.787 47.896L466.337 48.8155L468.878 49.7352L471.408 50.6556L473.928 51.5774L476.439 52.5012L478.941 53.4276L481.433 54.3573L483.916 55.2911L486.391 56.2295L488.856 57.1733L491.313 58.1232L493.76 59.0799L496.197 60.0441L498.625 61.0166L501.042 61.9981L503.449 62.9893L505.845 63.9908L508.23 65.0033L510.602 66.0277L512.962 67.0644L515.309 68.1143L517.641 69.1778L519.959 70.2557L522.26 71.3484L524.546 72.4566L526.814 73.5808L529.063 74.7215L531.294 75.8791L533.504 77.0541L535.693 78.2469L537.86 79.4577L540.003 80.687L542.122 81.935L544.216 83.2019L546.284 84.488L548.324 85.7932L550.336 87.1178L552.318 88.4618L554.27 89.8251L556.191 91.2077L558.08 92.6096L559.936 94.0306L561.758 95.4704L563.545 96.929L565.297 98.4059L567.014 99.9009L568.693 101.414L570.336 102.944L571.941 104.491L573.508 106.054L575.037 107.633L576.528 109.228L577.98 110.838L579.394 112.461L580.769 114.099L582.106 115.749L583.405 117.412L584.666 119.087L585.89 120.772L587.077 122.468L588.228 124.174L589.343 125.889L590.424 127.612L591.472 129.343L592.487 131.081L593.47 132.826L594.423 134.576L595.347 136.332L596.244 138.092L597.113 139.857L597.958 141.626L598.779 143.398L599.579 145.173L600.357 146.951L601.117 148.732L601.86 150.514L602.587 152.299L603.299 154.085L603.999 155.873L604.689 157.663L605.368 159.455L606.04 161.249L606.705 163.044L607.365 164.842L608.021 166.643L608.674 168.446L609.326 170.252L609.977 172.061L610.628 173.875L611.28 175.693L611.934 177.515L612.591 179.343L613.25 181.177L613.911 183.018L614.576 184.866L615.243 186.721L615.912 188.585L616.584 190.457L617.256 192.34L617.929 194.232L618.601 196.135L619.272 198.049L619.939 199.975L620.601 201.913L621.257 203.864L621.905 205.828L622.544 207.805L623.171 209.795L623.784 211.8L624.383 213.818L624.964 215.851L625.527 217.897L626.068 219.958L626.586 222.033L627.079 224.122L627.544 226.225L627.98 228.342L628.385 230.472L628.756 232.614L629.091 234.77L629.389 236.937L629.647 239.116L629.864 241.307L630.037 243.507L630.166 245.718L630.247 247.938L630.28 250.166L630.263 252.401L630.194 254.644L630.073 256.892L629.897 259.146L629.665 261.404L629.377 263.665L629.032 265.929L628.629 268.194L628.166 270.46L627.644 272.726L627.061 274.991L626.418 277.254L625.714 279.513L624.948 281.769L624.121 284.02L623.232 286.266L622.281 288.504L621.267 290.735L620.191 292.958L619.053 295.171L617.853 297.373L616.591 299.565L615.267 301.744L613.881 303.91L612.435 306.063L610.929 308.201L609.363 310.324L607.737 312.431L606.054 314.522L604.313 316.595L602.516 318.651L600.663 320.689L598.755 322.708L596.795 324.709L594.782 326.69L592.718 328.652L590.605 330.594L588.443 332.516L586.233 334.419L583.978 336.302L581.679 338.165L579.336 340.009L576.951 341.833L574.526 343.637L572.062 345.423L569.56 347.19L567.02 348.939L564.446 350.669L561.836 352.382L559.194 354.078L556.519 355.757L553.813 357.42L551.077 359.066L548.311 360.698L545.516 362.314L542.693 363.916L539.842 365.504L536.964 367.079L534.06 368.64L531.129 370.188L528.173 371.723L525.19 373.245L522.182 374.756L519.148 376.254L516.088 377.74L513.003 379.214L509.893 380.677L506.757 382.128L503.595 383.568L500.408 384.996L497.195 386.413L493.956 387.819L490.692 389.214L487.4 390.598L484.083 391.97L480.738 393.331L477.367 394.681L473.968 396.02L470.542 397.347L467.087 398.661L463.605 399.964L460.094 401.255L456.554 402.533L452.986 403.797L449.387 405.049L445.759 406.286L442.101 407.51L438.412 408.718L434.693 409.912L430.943 411.089L427.162 412.251L423.349 413.395L419.505 414.521L415.629 415.629L411.721 416.718L407.781 417.788L403.81 418.837L399.806 419.864L395.77 420.87L391.702 421.852Z"
-            fill="url(#paint0_linear_301_35)"
-            fill-opacity="0.54"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_301_35"
-              x1="2988.03"
-              y1="1647.58"
-              x2="2696.17"
-              y2="2064.78"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#C73457" />
-              <stop offset="1" stop-color="#C02828" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
+      <div
+        class="absolute top-0 z-[1] left-0 h-[126px] w-[157px] lg:w-[636px] lg:h-[726px]"
+      >
+        <img src="./assets/images/footerimage.png" alt="" />
       </div>
-      <div class="absolute top-[183px] right-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="402"
-          height="429"
-          viewBox="0 0 402 429"
-          fill="none"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M671.126 171.475L672.419 174.339L673.67 177.223L674.879 180.128L676.043 183.053L677.16 185.999L678.228 188.964L679.246 191.949L680.211 194.953L681.122 197.976L681.976 201.017L682.771 204.075L683.506 207.151L684.178 210.242L684.785 213.348L685.325 216.469L685.797 219.604L686.199 222.751L686.528 225.91L686.784 229.08L686.963 232.26L687.066 235.448L687.09 238.644L687.034 241.845L686.896 245.052L686.676 248.263L686.371 251.477L685.982 254.692L685.507 257.906L684.946 261.12L684.297 264.331L683.56 267.538L682.735 270.74L681.82 273.936L680.816 277.123L679.723 280.301L678.539 283.469L677.266 286.624L675.903 289.767L674.45 292.894L672.907 296.006L671.275 299.1L669.554 302.176L667.744 305.231L665.846 308.266L663.86 311.278L661.787 314.266L659.626 317.229L657.38 320.166L655.049 323.075L652.633 325.955L650.133 328.805L647.55 331.624L644.886 334.41L642.142 337.163L639.318 339.882L636.417 342.566L633.44 345.214L630.388 347.824L627.262 350.397L624.066 352.931L620.799 355.427L617.465 357.882L614.064 360.297L610.599 362.672L607.072 365.006L603.484 367.298L599.837 369.548L596.133 371.756L592.375 373.922L588.564 376.045L584.702 378.127L580.791 380.165L576.833 382.162L572.83 384.116L568.784 386.028L564.697 387.897L560.57 389.725L556.405 391.512L552.204 393.257L547.969 394.961L543.702 396.625L539.404 398.248L535.077 399.832L530.722 401.377L526.34 402.882L521.934 404.35L517.505 405.779L513.053 407.17L508.579 408.524L504.086 409.841L499.573 411.121L495.042 412.365L490.494 413.572L485.929 414.743L481.349 415.878L476.753 416.977L472.142 418.04L467.518 419.067L462.881 420.058L458.232 421.013L453.57 421.933L448.897 422.816L444.213 423.664L439.52 424.475L434.816 425.25L430.103 425.989L425.382 426.692L420.653 427.358L415.917 427.987L411.173 428.58L406.423 429.136L401.668 429.655L396.907 430.136L392.142 430.581L387.373 430.988L382.601 431.358L377.826 431.691L373.049 431.986L368.271 432.243L363.491 432.463L358.712 432.646L353.933 432.79L349.155 432.898L344.379 432.967L339.605 433L334.835 432.995L330.068 432.952L325.306 432.872L320.548 432.755L315.796 432.601L311.051 432.41L306.312 432.182L301.581 431.918L296.858 431.616L292.144 431.279L287.439 430.904L282.744 430.494L278.06 430.048L273.387 429.565L268.726 429.047L264.077 428.493L259.441 427.903L254.818 427.279L250.21 426.619L245.616 425.924L241.037 425.194L236.474 424.43L231.928 423.632L227.398 422.799L222.886 421.932L218.391 421.031L213.915 420.096L209.458 419.128L205.021 418.126L200.603 417.091L196.207 416.022L191.831 414.92L187.478 413.785L183.147 412.617L178.839 411.417L174.555 410.183L170.295 408.916L166.059 407.617L161.85 406.285L157.667 404.92L153.511 403.523L149.382 402.093L145.282 400.63L141.211 399.135L137.17 397.608L133.16 396.048L129.181 394.456L125.235 392.831L121.322 391.173L117.444 389.483L113.601 387.76L109.795 386.003L106.028 384.213L102.3 382.39L98.613 380.532L94.9686 378.641L91.3682 376.715L87.8133 374.755L84.3058 372.759L80.8472 370.73L77.4393 368.665L74.0839 366.565L70.7827 364.43L67.5375 362.26L64.3502 360.055L61.2226 357.815L58.1565 355.54L55.1538 353.231L52.2161 350.888L49.3453 348.512L46.5431 346.102L43.8112 343.659L41.1512 341.184L38.5648 338.677L36.0535 336.14L33.6188 333.572L31.2621 330.975L28.9847 328.35L26.7879 325.697L24.6729 323.017L22.6408 320.313L20.6926 317.583L18.8293 314.831L17.0516 312.056L15.3605 309.261L13.7565 306.446L12.2402 303.612L10.8121 300.762L9.47276 297.896L8.2224 295.015L7.06134 292.121L5.98977 289.216L5.00784 286.3L4.11561 283.376L3.31312 280.443L2.60034 277.505L1.97718 274.562L1.44344 271.615L0.998769 268.666L0.642692 265.717L0.374586 262.768L0.193693 259.821L0.0991209 256.878L0.0898438 253.941L0.164705 251.009L0.322423 248.085L0.561588 245.171L0.880676 242.267L1.27805 239.375L1.75195 236.496L2.30052 233.631L2.92182 230.782L3.6138 227.95L4.37431 225.136L5.20116 222.34L6.09206 219.565L7.04466 216.81L8.05655 214.077L9.12527 211.366L10.2483 208.679L11.4232 206.016L12.6472 203.377L13.9179 200.764L15.2327 198.176L16.5889 195.614L17.9839 193.079L19.4152 190.57L20.8802 188.089L22.3762 185.634L23.9009 183.207L25.4517 180.807L27.0262 178.433L28.622 176.087L30.2368 173.768L31.8684 171.475L33.5147 169.209L35.1736 166.969L36.8431 164.754L38.5215 162.564L40.207 160.399L41.8979 158.259L43.5926 156.142L45.2897 154.048L46.988 151.976L48.686 149.926L50.3827 147.897L52.0771 145.889L53.7683 143.901L55.4553 141.932L57.1376 139.981L58.8144 138.048L60.4853 136.132L62.1499 134.232L63.8079 132.348L65.4591 130.479L67.1032 128.624L68.7404 126.782L70.3707 124.954L71.9942 123.137L73.6112 121.333L75.222 119.539L76.827 117.756L78.4267 115.983L80.0216 114.22L81.6123 112.465L83.1995 110.719L84.784 108.981L86.3664 107.252L87.9478 105.529L89.5289 103.814L91.1106 102.106L92.694 100.404L94.2801 98.7097L95.8698 97.0213L97.4643 95.3395L99.0645 93.664L100.672 91.9948L102.287 90.3322L103.911 88.676L105.546 87.0266L107.191 85.3839L108.85 83.7484L110.522 82.1202L112.208 80.4996L113.911 78.8869L115.63 77.2827L117.367 75.6872L119.123 74.1009L120.899 72.5244L122.695 70.958L124.513 69.4025L126.354 67.8583L128.219 66.3262L130.108 64.8066L132.021 63.3003L133.96 61.8079L135.926 60.3302L137.919 58.8677L139.938 57.4213L141.986 55.9917L144.062 54.5795L146.166 53.1855L148.298 51.8104L150.46 50.4548L152.651 49.1196L154.87 47.8054L157.119 46.5128L159.396 45.2425L161.702 43.9951L164.036 42.7712L166.398 41.5713L168.787 40.396L171.204 39.2457L173.647 38.1208L176.116 37.0219L178.611 35.9492L181.13 34.9029L183.673 33.8834L186.239 32.8908L188.828 31.9253L191.437 30.9869L194.067 30.0756L196.717 29.1914L199.385 28.3341L202.07 27.5035L204.772 26.6993L207.489 25.9213L210.221 25.169L212.966 24.4419L215.724 23.7396L218.493 23.0614L221.272 22.4066L224.061 21.7746L226.858 21.1645L229.663 20.5756L232.475 20.007L235.293 19.4577L238.117 18.9268L240.945 18.4133L243.777 17.9162L246.613 17.4343L249.453 16.9666L252.295 16.5121L255.139 16.0696L257.986 15.6379L260.835 15.2161L263.686 14.8031L266.54 14.3976L269.395 13.9988L272.254 13.6056L275.115 13.217L277.979 12.832L280.847 12.4499L283.719 12.0697L286.596 11.6908L289.478 11.3124L292.367 10.934L295.262 10.555L298.165 10.175L301.077 9.79365L303.998 9.4108L306.93 9.02629L309.873 8.64012L312.828 8.25241L315.796 7.86338L318.779 7.4734L321.777 7.08296L324.79 6.69266L327.821 6.30325L330.869 5.91561L333.935 5.53069L337.02 5.14953L340.125 4.7732L343.25 4.40285L346.395 4.03966L349.561 3.68488L352.748 3.33978L355.956 3.00568L359.185 2.68393L362.436 2.37589L365.708 2.08297L369.001 1.80658L372.315 1.54813L375.649 1.30906L379.003 1.0908L382.376 0.894753L385.768 0.722335L389.178 0.574932L392.605 0.453909L396.049 0.360601L399.507 0.296308L402.98 0.262291L406.466 0.259766L409.963 0.289898L413.472 0.353799L416.99 0.452523L420.515 0.587059L424.048 0.758332L427.585 0.967195L431.127 1.21443L434.671 1.50075L438.215 1.82677L441.759 2.19304L445.302 2.60004L448.84 3.04815L452.374 3.53768L455.901 4.06891L459.421 4.6421L462.931 5.25744L466.43 5.91514L469.917 6.61531L473.391 7.35805L476.848 8.14342L480.29 8.97139L483.713 9.84192L487.116 10.7549L490.499 11.7101L493.859 12.7074L497.195 13.7465L500.507 14.8269L503.793 15.9484L507.052 17.1105L510.283 18.3126L513.484 19.5543L516.656 20.8349L519.797 22.1537L522.907 23.51L525.984 24.9032L529.03 26.3324L532.042 27.7968L535.021 29.2956L537.966 30.828L540.878 32.393L543.757 33.9897L546.601 35.6172L549.413 37.2747L552.191 38.9612L554.936 40.6757L557.649 42.4175L560.329 44.1856L562.979 45.9791L565.597 47.7973L568.185 49.6393L570.744 51.5043L573.274 53.3916L575.775 55.3005L578.25 57.2304L580.698 59.1806L583.12 61.1507L585.517 63.14L587.89 65.1482L590.239 67.1748L592.565 69.2196L594.869 71.2822L597.151 73.3624L599.412 75.4601L601.651 77.5751L603.87 79.7074L606.068 81.8569L608.246 84.0235L610.404 86.2072L612.542 88.408L614.661 90.626L616.76 92.8611L618.841 95.1135L620.902 97.3832L622.944 99.6703L624.968 101.975L626.972 104.297L628.958 106.638L630.924 108.996L632.871 111.372L634.799 113.767L636.707 116.18L638.594 118.612L640.462 121.063L642.308 123.533L644.133 126.023L645.935 128.532L647.716 131.061L649.473 133.61L651.206 136.179L652.914 138.768L654.596 141.378L656.252 144.009L657.881 146.66L659.481 149.333L661.051 152.026L662.591 154.741L664.1 157.477L665.576 160.234L667.017 163.013L668.424 165.812L669.794 168.633L671.126 171.475Z"
-            fill="url(#paint0_linear_301_34)"
-            fill-opacity="0.54"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_301_34"
-              x1="2736.88"
-              y1="-1570.47"
-              x2="2989.62"
-              y2="-1130.1"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#C73457" />
-              <stop offset="1" stop-color="#C02828" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
+      <div
+        class="absolute top-[100px] opacity-50 lg:opacity-100 lg:top-[183px] z-[0] right-0 w-[172px] h-[125px] lg:w-[387px] lg:h-[332.74px]"
+      >
+        <img src="./assets/images/footerimage2.png" alt="" />
       </div>
-      <div class="absolute bottom-0 left-0">
+      <div
+        class="absolute bottom-0 left-0 w-[99.67px] h-[78.38px] lg:w-[343px] lg:h-[313px]"
+      >
         <img src="./assets/images/Icon 1footer icon.png" alt="" />
       </div>
-      <div class="absolute bottom-[10px] right-0">
+      <div
+        class="absolute bottom-[310px] lg:bottom-[10px] right-0 w-[90px] h-[29px] lg:w-[160px] lg:h-[313px]"
+      >
         <img src="./assets/images/Icon 2footer icon2.png" alt="" />
       </div>
 
       <div
-        class="w-auto h-auto md:pt-[165px] flex pb-[85px] items-end justify-center"
+        class="w-auto h-auto md:pt-[165px] flex pb-[85px] flex-col items-center gap-5 justify-center"
       >
-        <div class="flex flex-col md:flex-row justify-between gap-[46px]">
+        <div class="relative z-[99] flex flex-row justify-between lg:gap-5">
           <a
             href="mailto:Alyinsoftwarehouse@gmail.com"
             target="_blank"
-            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
           >
             <i
-              class="fa-solid fa-envelope text-[48px] text-white hover:text-[#000]"
+              class="fa-solid fa-envelope text-[40px] lg:text-[48px] text-white hover:text-[#000]"
             ></i>
           </a>
           <a
             href="https://www.linkedin.com/company/aliyn/"
             target="_blank"
-            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
           >
             <i
-              class="fa-brands fa-linkedin text-[48px] text-white hover:text-[#0077B5]"
+              class="fa-brands fa-linkedin text-[40px] lg:text-[48px] text-white hover:text-[#0077B5]"
             ></i>
           </a>
           <a
             href="https://wa.me/201004673894"
             target="_blank"
-            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
           >
             <i
-              class="fa-brands fa-square-whatsapp text-[48px] text-white hover:text-[#25D366]"
+              class="fa-brands fa-square-whatsapp text-[40px] lg:text-[48px] text-white hover:text-[#25D366]"
             ></i>
           </a>
 
           <a
             href="https://www.facebook.com/profile.php?id=100094593168418&mibextid=LQQJ4d"
             target="_blank"
-            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
           >
             <i
-              class="text-[48px] fa-brands fa-square-facebook text-white hover:text-[#4267B2]"
+              class="text-[40px] lg:text-[48px] fa-brands fa-square-facebook text-white hover:text-[#4267B2]"
             ></i>
           </a>
           <a
             href="https://instagram.com/aliyn_softwarehouse?igshid=MzRlODBiNWFlZA=="
             target="_blank"
-            class="w-[68px] h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
           >
             <i
-              class="text-[48px] fa-brands fa-instagram text-white hover:text-[#C13584]"
+              class="text-[40px] lg:text-[48px] fa-brands fa-instagram text-white hover:text-[#C13584]"
             ></i>
           </a>
+        </div>
+        <div>
+          <p
+            class="text-white text-[15px] lg:text-[28px] font-normal font-['Red Hat Display']"
+          >
+            Alyinsoftwarehouse@gmail.com
+          </p>
         </div>
       </div>
     </div>
