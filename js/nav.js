@@ -135,4 +135,5 @@ function toggleDropdown(dropdownId) {
 }
 
 var video = document.getElementById("myVideo");
+video.muted = true;
 video.play();
