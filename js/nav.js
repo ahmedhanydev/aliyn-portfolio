@@ -100,10 +100,11 @@ window.addEventListener("scroll", function () {
   var scrollPosition = window.scrollY;
   // console.log(window.scrollY);
   if (scrollPosition >= 95) {
-    document.querySelector(".navbar_big").style.display = "none";
+    // document.querySelector(".navbar_big").style.display = "none";
+
     document.querySelector(".navbar_small").style.display = "flex";
   } else {
-    document.querySelector(".navbar_big").style.display = "block";
+    // document.querySelector(".navbar_big").style.display = "block";
     document.querySelector(".navbar_small").style.display = "none";
   }
 });
@@ -132,3 +133,6 @@ function toggleDropdown(dropdownId) {
       .classList.add("rotate-0");
   }
 }
+
+var video = document.getElementById("myVideo");
+video.play();
