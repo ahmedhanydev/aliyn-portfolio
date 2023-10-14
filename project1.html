@@ -23,9 +23,7 @@
   <body class="overflow-x-hidden">
     <div class="">
       <!-- navbar big -->
-      <nav
-        class="navbar_big bg-transparent fixed top-0 right-0 left-0 pt-[15px] md:pt-[54px]"
-      >
+      <nav class="bg-transparent relative pt-[15px] md:pt-[54px]">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <!-- Mobile menu button-->
@@ -170,7 +168,7 @@
         class="navbar_small hidden justify-end md:justify-center fixed top-10 right-[10px] left-0 z-[100]"
       >
         <div
-          class="relative lg:w-[447px] h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 flex"
+          class="relative md:hidden h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 flex"
         >
           <div class="px-2 sm:px-6 lg:px-8">
             <div class="flex h-14 items-center justify-center">
@@ -223,39 +221,6 @@
                 </button>
               </div>
               <!-- navbar small desktop menu -->
-              <div
-                class="flex flex-1 gap-[200px] items-center sm:items-stretch sm:justify-start"
-              >
-                <div class="hidden sm:ml-6 sm:block">
-                  <div
-                    class="flex space-x-3 justify-center items-center gap-[25px]"
-                  >
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a
-                      href="./index.html"
-                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
-                      aria-current="page"
-                      >Projects</a
-                    >
-                    <a
-                      href="./index.html"
-                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
-                      >Process</a
-                    >
-                    <a
-                      href="./about.html"
-                      class="text-neutral-800 text-[13px] font-semibold font-['Inter']"
-                      >About</a
-                    >
-                    <a
-                      href="./contact.html"
-                      class="w-[101px] h-7 px-4 py-1.5 bg-red-700 rounded-2xl justify-center items-center gap-2.5 inline-flex text-white text-[13px] font-semibold font-['Inter']"
-                    >
-                      Contact us
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -295,7 +260,7 @@
         </div>
       </nav>
       <div
-        class="lg:mt-[220px] mt-[100px] mb-[-40px] lg:mb-[-60px] ml-[30px] lg:ml-[50px]"
+        class="lg:mt-[85px] mt-[100px] mb-[-40px] lg:mb-[-60px] ml-[30px] lg:ml-[50px]"
       >
         <h1
           class="text-[#C3D396] text-[27px] lg:text-6xl font-black font-['Red Hat Display'] uppercase"
@@ -424,39 +389,44 @@
         </div>
 
         <div class="w-full flex justify-center items-center">
-          <div
-            class="w-[277px] flex justify-center items-center h-[585px] bg-[url('./assets/images/mockup1.png')] bg-no-repeat bg-center bg-cover lg:w-[379px] lg:h-[796px] overflow-x-hidden"
+          <!-- <div
+            class="w-[277px] h-[585px] lg:w-[379px] lg:h-[796px] flex justify-center items-center bg-[url('./assets/images/mockup1.png')] bg-no-repeat bg-center bg-cover overflow-x-hidden"
+          > -->
+          <!-- <img
+              src="./assets/images/mockup1.png"
+              class="relative "
+              alt=""
+            /> -->
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            width="362"
+            class="hidden lg:flex rounded-[55px] mb-[4px]"
+            height="23"
+            id="myVideo"
           >
-            <video
-              autoplay
-              loop
-              muted
-              playsinline
-              width="362"
-              class="hidden lg:flex rounded-[55px] mb-[4px]"
-              height="23"
-              id="myVideo"
-            >
-              <source src="./assets/videos/project1.mp4" type="video/mp4" />
+            <source src="./assets/videos/project1.mp4" type="video/mp4" />
 
-              Your browser does not support the video tag.
-            </video>
+            Your browser does not support the video tag.
+          </video>
 
-            <video
-              autoplay
-              loop
-              muted
-              playsinline
-              width="267"
-              class="lg:hidden rounded-[43px]"
-              height="20"
-              id="myVideo"
-            >
-              <source src="./assets/videos/project1.mp4" type="video/mp4" />
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            width="267"
+            class="lg:hidden rounded-[43px]"
+            height="20"
+            id="myVideo"
+          >
+            <source src="./assets/videos/project1.mp4" type="video/mp4" />
 
-              Your browser does not support the video tag.
-            </video>
-          </div>
+            Your browser does not support the video tag.
+          </video>
+          <!-- </div> -->
         </div>
       </div>
       <div class="mx-[20px] lg:mx-[100px] mb-[65px] lg:mb-[160px]">
