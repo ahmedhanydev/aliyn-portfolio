@@ -389,7 +389,7 @@
         <div class="flex flex-col items-start">
           <div class="w-full flex justify-center">
             <div
-              class="relative w-[889px] h-[900px] bg-[url(./assets/images/watch.png)] bg-cover bg-no-repeat"
+              class="relative flex justify-center items-center w-[889px] h-[900px] bg-[url(./assets/images/watch.png)] bg-cover bg-no-repeat"
             >
               <!-- <img
                 src=""
@@ -398,9 +398,13 @@
               /> -->
               <video
                 width="280"
-                class="absolute top-[275px] left-[300px] rounded-[75px]"
+                class="rounded-[75px]"
                 height="20"
                 autoplay
+                loop
+                muted
+                playsinline
+                id="myVideo"
               >
                 <source src="./assets/videos/project4.mp4" type="video/mp4" />
 
