@@ -132,32 +132,32 @@
         <!-- navbar big mobile menu -->
         <div class="hidden" id="mobile-menu1">
           <div
-            class="space-y-1 absolute right-4 flex gap-[20px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
+            class="space-y-1 absolute right-4 top-[80px] flex gap-[10px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
           >
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
               href="./index.html"
               class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
-              aria-current="page"
             >
               <span class="text-xs font-bold font-['Red Hat Display']"
-                >Projects</span
+                >Home</span
               >
             </a>
-            <a
-              href="./index.html"
-              class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
-            >
-              <span class="text-xs font-bold font-['Red Hat Display']"
-                >Process</span
-              >
-            </a>
+
             <a
               href="./about.html"
               class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
             >
               <span class="text-xs font-bold font-['Red Hat Display']"
                 >About</span
+              >
+            </a>
+            <a
+              href="./contact.html"
+              class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center rounded-[22px] border border-red-700"
+            >
+              <span class="text-xs font-bold font-['Red Hat Display']"
+                >Contact Us</span
               >
             </a>
           </div>
@@ -227,32 +227,32 @@
           <!-- navbar small mobile menu  -->
           <div class="hidden" id="mobile-menu2">
             <div
-              class="space-y-1 absolute right-4 top-[50px] flex gap-[20px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
+              class="space-y-1 absolute right-4 top-[50px] flex gap-[10px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
             >
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a
                 href="./index.html"
                 class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
-                aria-current="page"
               >
                 <span class="text-xs font-bold font-['Red Hat Display']"
-                  >Projects</span
+                  >Home</span
                 >
               </a>
-              <a
-                href="./index.html"
-                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
-              >
-                <span class="text-xs font-bold font-['Red Hat Display']"
-                  >Process</span
-                >
-              </a>
+
               <a
                 href="./about.html"
                 class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
               >
                 <span class="text-xs font-bold font-['Red Hat Display']"
                   >About</span
+                >
+              </a>
+              <a
+                href="./contact.html"
+                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center rounded-[22px] border border-red-700"
+              >
+                <span class="text-xs font-bold font-['Red Hat Display']"
+                  >Contact Us</span
                 >
               </a>
             </div>
@@ -387,26 +387,39 @@
             App Video
           </h3>
         </div>
-        <div class="flex flex-col items-start">
-          <div class="w-full flex justify-center">
-            <div class="relative w-[789px] h-[786px]">
-              <img
-                src="./assets/images/mockup1.png"
-                class="w-full h-full"
-                alt=""
-              />
-              <video
-                width="280"
-                class="absolute top-[93px] left-[255px] rounded-[39px]"
-                height="20"
-                autoplay
-              >
-                <source src="./assets/videos/project2.mp4" type="video/mp4" />
+        <div
+          class="w-full flex justify-center items-center mt-[34px] lg:mt-[70px]"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            width="362"
+            class="hidden lg:flex rounded-[55px] mb-[4px]"
+            height="23"
+            id="myVideo"
+          >
+            <source src="./assets/videos/project2.mp4" type="video/mp4" />
 
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+            Your browser does not support the video tag.
+          </video>
+
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            width="267"
+            class="lg:hidden rounded-[43px]"
+            height="20"
+            id="myVideo"
+          >
+            <source src="./assets/videos/project2.mp4" type="video/mp4" />
+
+            Your browser does not support the video tag.
+          </video>
+          <!-- </div> -->
         </div>
       </div>
       <div class="mx-[20px] lg:mx-[100px] mb-[65px] lg:mb-[160px]">
