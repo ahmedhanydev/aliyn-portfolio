@@ -9,6 +9,7 @@ body {
 }
 .swiper-slide {
   width: 661px;
+  /* height: 661px !important; */
   height: 661px !important;
 }
 /* .swiper-pagination {
@@ -24,19 +25,19 @@ body {
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* CSS rules for large screens */
-  .ball_one {
+  /* .ball_one {
     right: 694px;
   }
   .ball_two {
     right: 38px;
-  }
+  } */
 }
 .dropdown-content {
   display: none;
 }
 @media (min-width: 1200px) {
   /* CSS rules for extra large screens */
-  .ball_one {
+  /* .ball_one {
     right: 696px;
   }
   .ball_two {
@@ -49,7 +50,7 @@ body {
   .ball_about_two {
     top: 330px;
     left: 75px;
-  }
+  } */
 }
 
 .hidden-element {
