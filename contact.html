@@ -304,13 +304,13 @@
       </div>
       <!-- form -->
       <div
-        class="flex min-h-full mb-[65px] lg:mb-[230px] flex-col items-center justify-center px-6 pt-12 lg:py-12 lg:px-8"
+        class="flex min-h-full mb-[65px] lg:mb-[90px] flex-col items-center justify-center px-6 pt-12 lg:py-4 lg:px-8"
       >
         <form class="space-y-6">
           <div>
             <label
               for="nameInput"
-              class="text-zinc-800 text-sm lg:text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              class="text-zinc-800 text-sm lg:text-lg font-semibold font-['Inter'] capitalize leading-[30px]"
               >Full name *</label
             >
             <div class="mt-2">
@@ -320,14 +320,14 @@
                 type="text"
                 required
                 placeholder="Enter You Name"
-                class="w-full lg:w-[716px] text-sm lg:text-xl px-4 h-12 lg:h-20 bg-white rounded lg:rounded-[20px] border border-neutral-300"
+                class="w-full lg:w-[716px] text-sm lg:text-lg px-4 h-12 lg:h-16 bg-white rounded lg:rounded-[20px] border border-neutral-300"
               />
             </div>
           </div>
           <div class="lg:pt-[10px]">
             <label
               for="emailInput"
-              class="text-zinc-800 text-sm lg:text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              class="text-zinc-800 text-sm lg:text-lg font-semibold font-['Inter'] capitalize leading-[30px]"
               >Your email *</label
             >
             <div class="mt-2">
@@ -338,14 +338,14 @@
                 autocomplete="email"
                 placeholder="Enter your email address"
                 required
-                class="w-full lg:w-[716px] text-sm lg:text-xl px-4 h-12 lg:h-20 bg-white rounded lg:rounded-[20px] border border-neutral-300"
+                class="w-full lg:w-[716px] text-sm lg:text-lg px-4 h-12 lg:h-16 bg-white rounded lg:rounded-[20px] border border-neutral-300"
               />
             </div>
           </div>
           <div class="lg:pt-[10px]">
             <label
               for="phone"
-              class="text-zinc-800 text-sm lg:text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              class="text-zinc-800 text-sm lg:text-lg font-semibold font-['Inter'] capitalize leading-[30px]"
               >Phone Number</label
             >
             <div class="relative mt-2 rounded-md shadow-sm">
@@ -353,7 +353,7 @@
                 type="number"
                 name="phone"
                 id="phone"
-                class="w-full lg:w-[716px] text-sm lg:text-xl py-1.5 pl-16 pr-20 h-12 lg:h-20 bg-white rounded lg:rounded-[20px] border border-neutral-300"
+                class="w-full lg:w-[716px] text-sm lg:text-lg py-1.5 pl-16 pr-20 h-12 lg:h-16 bg-white rounded lg:rounded-[20px] border border-neutral-300"
                 placeholder="Your phone number"
               />
               <div class="absolute inset-y-0 left-0 flex items-center">
@@ -361,7 +361,7 @@
                 <select
                   id="country_select"
                   name="country"
-                  class="h-full rounded-md border-0 bg-transparent py-0 pl-2 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm lg:text-xl"
+                  class="h-full rounded-md border-0 bg-transparent py-0 pl-2 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm lg:text-lg"
                 >
                   <option value="20">EG</option>
                   <option value="966">SA</option>
@@ -380,7 +380,7 @@
           <div class="lg:pt-[10px]">
             <label
               for="company"
-              class="text-zinc-800 text-sm lg:text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              class="text-zinc-800 text-sm lg:text-lg font-semibold font-['Inter'] capitalize leading-[30px]"
               >Company name *</label
             >
             <div class="mt-2">
@@ -390,23 +390,23 @@
                 type="text"
                 required
                 placeholder="Your Company Name Here"
-                class="bg-white w-full lg:w-[716px] text-sm lg:text-xl px-4 h-12 lg:h-20 rounded lg:rounded-[20px] border border-neutral-300"
+                class="bg-white w-full lg:w-[716px] text-sm lg:text-lg px-4 h-12 lg:h-16 rounded lg:rounded-[20px] border border-neutral-300"
               />
             </div>
           </div>
           <div class="lg:pt-[10px]">
             <label
               for="message"
-              class="text-zinc-800 text-sm lg:text-xl font-semibold font-['Inter'] capitalize leading-[30px]"
+              class="text-zinc-800 text-sm lg:text-lg font-semibold font-['Inter'] capitalize leading-[30px]"
               >Message *</label
             >
             <div class="mt-2">
               <textarea
                 id="message"
                 name="message"
-                rows="10"
+                rows="6"
                 required
-                class="px-4 pt-4 resize-none text-sm lg:text-xl w-full bg-white rounded lg:rounded-[20px] border border-neutral-300"
+                class="px-4 pt-4 resize-none text-sm lg:text-lg w-full bg-white rounded lg:rounded-[20px] border border-neutral-300"
                 placeholder="Tell us about your project"
               ></textarea>
             </div>
@@ -414,7 +414,7 @@
           <div class="flex justify-center lg:justify-end lg:pt-10">
             <button
               type="submit"
-              class="flex w-full lg:w-1/2 h-[51px] lg:h-[70px] lg:px-[100px] py-6 bg-red-700 rounded-[18px] border-2 border-red-700 justify-center items-center text-white text-sm lg:text-lg font-semibold font-['Inter']"
+              class="flex w-full lg:w-1/2 h-[51px] lg:h-[65px] lg:px-[100px] py-6 bg-red-700 rounded-[18px] border-2 border-red-700 justify-center items-center text-white text-sm lg:text-lg font-semibold font-['Inter']"
             >
               Send Massage
             </button>
