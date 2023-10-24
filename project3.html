@@ -22,28 +22,171 @@
   </head>
   <body class="overflow-x-hidden">
     <div class="">
-      <!-- navbar big -->
-      <nav class="bg-transparent relative pt-[15px] md:pt-[54px]">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <!-- Mobile menu button-->
-            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+     <!-- navbar big -->
+     <nav class="bg-transparent relative pt-[15px] md:pt-[54px]">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 2xl:max-w-[1630px]">
+        <div class="relative flex h-16 items-center justify-between">
+          <!-- Mobile menu button-->
+          <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-red-700 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu1"
+              id="button-menu1"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+   Icon when menu is closed.
+
+   Menu open: "hidden", Menu closed: "block"
+ -->
+              <svg
+                class="block h-8 w-8 open_icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+   Icon when menu is open.
+
+   Menu open: "block", Menu closed: "hidden"
+ -->
+              <svg
+                class="hidden h-8 w-8 close_icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="w-full flex justify-between items-center">
+            <!-- navbar big logo -->
+            <div class="flex flex-shrink-0 items-center">
+              <a href="./index.html" class="flex ml-5 lg:ml-0">
+                <img
+                  class="w-[50px] h-[50px] lg:w-[77px] lg:h-[70px]"
+                  src="./assets/images/logo2.png"
+                  alt="logo Aliyn"
+                />
+                <div
+                  class="text-black hidden md:flex text-base lg:text-2xl font-normal font-['Milonga']"
+                >
+                  Aliyn <br />Software House
+                </div>
+              </a>
+            </div>
+            <!-- navbar big desktop menu -->
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex justify-center items-center gap-[10px]">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="./index.html"
+                  aria-current="page"
+                  class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                >
+                  <span class="text-xl font-bold font-['Red Hat Display']">
+                    Projects
+                  </span>
+                </a>
+                <a
+                  href="./index.html"
+                  class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                >
+                  <span class="text-xl font-bold font-['Red Hat Display']">
+                    Process
+                  </span>
+                </a>
+                <a
+                  href="./about.html"
+                  class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
+                >
+                  <span class="text-xl font-bold font-['Red Hat Display']">
+                    About
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar big mobile menu -->
+      <div class="hidden" id="mobile-menu1">
+        <div
+          class="space-y-1 absolute right-4 top-[80px] flex gap-[10px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
+        >
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="./index.html"
+            class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
+          >
+            <span class="text-xs font-bold font-['Red Hat Display']"
+              >Home</span
+            >
+          </a>
+
+          <a
+            href="./about.html"
+            class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
+          >
+            <span class="text-xs font-bold font-['Red Hat Display']"
+              >About</span
+            >
+          </a>
+          <a
+            href="./contact.html"
+            class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center rounded-[22px] border border-red-700"
+          >
+            <span class="text-xs font-bold font-['Red Hat Display']"
+              >Contact Us</span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar small -->
+    <nav
+      class="navbar_small hidden justify-end md:justify-center fixed top-10 right-[10px] left-0 z-[100]"
+    >
+      <div
+        class="relative md:hidden h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 flex"
+      >
+        <div class="px-2 sm:px-6 lg:px-8">
+          <div class="flex h-14 items-center justify-center">
+            <!-- navbar small logo -->
+            <div class="absolute top-[6px] right-[15px] flex sm:hidden">
+              <!-- Mobile menu button-->
               <button
                 type="button"
-                class="relative inline-flex items-center justify-center rounded-md p-2 text-red-700 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                aria-controls="mobile-menu1"
-                id="button-menu1"
+                class="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-gray-500 hover:text-white"
+                aria-controls="mobile-menu2"
+                id="button-menu2"
                 aria-expanded="false"
               >
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
-                <!--
-     Icon when menu is closed.
 
-     Menu open: "hidden", Menu closed: "block"
-   -->
                 <svg
-                  class="block h-8 w-8 open_icon"
+                  class="block h-8 w-8 open_icon_two"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -57,12 +200,12 @@
                   />
                 </svg>
                 <!--
-     Icon when menu is open.
+   Icon when menu is open.
 
-     Menu open: "block", Menu closed: "hidden"
-   -->
+   Menu open: "block", Menu closed: "hidden"
+ -->
                 <svg
-                  class="hidden h-8 w-8 close_icon"
+                  class="hidden h-8 w-8 close_icon_two"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -77,62 +220,14 @@
                 </svg>
               </button>
             </div>
-
-            <div class="w-full flex justify-between items-center">
-              <!-- navbar big logo -->
-              <div class="flex flex-shrink-0 items-center">
-                <a href="./index.html" class="flex ml-5 lg:ml-0">
-                  <img
-                    class="w-[50px] h-[50px] lg:w-[77px] lg:h-[70px]"
-                    src="./assets/images/logo2.png"
-                    alt="logo Aliyn"
-                  />
-                  <div
-                    class="text-black hidden md:flex text-base lg:text-2xl font-normal font-['Milonga']"
-                  >
-                    Aliyn <br />Software House
-                  </div>
-                </a>
-              </div>
-              <!-- navbar big desktop menu -->
-              <div class="hidden sm:ml-6 sm:block">
-                <div class="flex justify-center items-center gap-[10px]">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a
-                    href="./index.html"
-                    aria-current="page"
-                    class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
-                  >
-                    <span class="text-xl font-bold font-['Red Hat Display']">
-                      Projects
-                    </span>
-                  </a>
-                  <a
-                    href="./index.html"
-                    class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
-                  >
-                    <span class="text-xl font-bold font-['Red Hat Display']">
-                      Process
-                    </span>
-                  </a>
-                  <a
-                    href="./about.html"
-                    class="w-[140px] h-[62px] hover:bg-red-700 hover:text-white text-black flex justify-center items-center px-10 py-[18px] rounded-[18px] border-2 border-red-700"
-                  >
-                    <span class="text-xl font-bold font-['Red Hat Display']">
-                      About
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <!-- navbar small desktop menu -->
           </div>
         </div>
 
-        <!-- navbar big mobile menu -->
-        <div class="hidden" id="mobile-menu1">
+        <!-- navbar small mobile menu  -->
+        <div class="hidden" id="mobile-menu2">
           <div
-            class="space-y-1 absolute right-4 top-[80px] flex gap-[10px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
+            class="space-y-1 absolute right-4 top-[50px] flex gap-[10px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
           >
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
@@ -162,103 +257,8 @@
             </a>
           </div>
         </div>
-      </nav>
-      <!-- navbar small -->
-      <nav
-        class="navbar_small hidden justify-end md:justify-center fixed top-10 right-[10px] left-0 z-[100]"
-      >
-        <div
-          class="relative md:hidden h-11 pl-8 pr-4 py-1 bg-white rounded-3xl border border-neutral-200 justify-center items-center gap-8 flex"
-        >
-          <div class="px-2 sm:px-6 lg:px-8">
-            <div class="flex h-14 items-center justify-center">
-              <!-- navbar small logo -->
-              <div class="absolute top-[6px] right-[15px] flex sm:hidden">
-                <!-- Mobile menu button-->
-                <button
-                  type="button"
-                  class="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-gray-500 hover:text-white"
-                  aria-controls="mobile-menu2"
-                  id="button-menu2"
-                  aria-expanded="false"
-                >
-                  <span class="absolute -inset-0.5"></span>
-                  <span class="sr-only">Open main menu</span>
-
-                  <svg
-                    class="block h-8 w-8 open_icon_two"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                  </svg>
-                  <!--
-     Icon when menu is open.
-
-     Menu open: "block", Menu closed: "hidden"
-   -->
-                  <svg
-                    class="hidden h-8 w-8 close_icon_two"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <!-- navbar small desktop menu -->
-            </div>
-          </div>
-
-          <!-- navbar small mobile menu  -->
-          <div class="hidden" id="mobile-menu2">
-            <div
-              class="space-y-1 absolute right-4 top-[50px] flex gap-[10px] flex-col items-center justify-center w-[181px] h-[212px] bg-zinc-100 rounded-[20px] shadow"
-            >
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a
-                href="./index.html"
-                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
-              >
-                <span class="text-xs font-bold font-['Red Hat Display']"
-                  >Home</span
-                >
-              </a>
-
-              <a
-                href="./about.html"
-                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center bg-white rounded-[22px] border border-red-700"
-              >
-                <span class="text-xs font-bold font-['Red Hat Display']"
-                  >About</span
-                >
-              </a>
-              <a
-                href="./contact.html"
-                class="w-[135px] h-8 flex justify-center text-red-700 hover:bg-red-700 hover:text-white items-center rounded-[22px] border border-red-700"
-              >
-                <span class="text-xs font-bold font-['Red Hat Display']"
-                  >Contact Us</span
-                >
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
       <div
         class="lg:mt-[85px] mt-[100px] mb-[-40px] lg:mb-[-60px] ml-[30px] lg:ml-[50px]"
       >
@@ -439,110 +439,95 @@
           </a>
         </div>
       </div>
-      <!-- footer -->
-      <div
-      class="w-auto flex overflow-hidden flex-col h-auto lg:h-[80vh] relative bg-red-700"
-    >
-      <div
-        class="relative z-[99] flex gap-2 lg:gap-5 lg:my-0 pt-[50px] md:pt-[90px] justify-center items-center"
-      >
-        <p
-          class="text-white text-[27px] lg:text-[80px] font-normal font-['Red Hat Display']"
-        >
-          Get in touch
-        </p>
-        <img
-          src="./assets/icons/arrowfooter.svg"
-          class="w-[23px] h-[21px] lg:h-[77px] lg:w-[85px]"
-          alt="arrow footer"
-        />
-      </div>
-      <div
-        class="absolute top-0 z-[1] left-0 h-[126px] w-[157px] lg:w-[636px] lg:h-[726px]"
-      >
-        <img src="./assets/images/footerimage.png" alt="shape icon" />
-      </div>
-      <div
-        class="absolute top-[100px] opacity-50 lg:opacity-100 lg:top-[183px] z-[0] right-0 w-[172px] h-[125px] lg:w-[387px] lg:h-[332.74px]"
-      >
-        <img src="./assets/images/footerimage2.png" alt="shape icon" />
-      </div>
-      <div
-        class="absolute bottom-0 left-0 w-[99.67px] h-[78.38px] lg:w-[343px] lg:h-[313px]"
-      >
-        <img src="./assets/images/Icon 1footer icon.png" alt="shape icon" />
-      </div>
-      <div
-        class="absolute bottom-[310px] lg:bottom-[10px] right-0 w-[90px] h-[29px] lg:w-[160px] lg:h-[313px]"
-      >
-        <img src="./assets/images/Icon 2footer icon2.png" alt="shape icon" />
-      </div>
+ <!-- footer -->
+ <div
+ class="w-auto flex overflow-hidden flex-col h-auto lg:h-[429px] relative bg-red-700"
+>
+ <div
+   class="relative z-[99] flex gap-2 lg:gap-5 lg:my-0 pt-[50px] md:pt-[90px] justify-center items-center"
+ >
+   <p
+     class="text-white text-[27px] lg:text-[80px] font-normal font-['Red Hat Display']"
+   >
+     Get in touch
+   </p>
+   <img
+     src="./assets/icons/arrowfooter.svg"
+     class="w-[23px] h-[21px] lg:h-[77px] lg:w-[85px]"
+     alt="arrow footer"
+   />
+ </div>
+ <div
+   class="absolute top-0 z-[1] left-0 h-[126px] w-[157px] lg:w-[636px] lg:h-[726px]"
+ >
+   <img src="./assets/images/footerimage.png" alt="" />
+ </div>
+ <div
+   class="absolute top-[100px] opacity-50 lg:opacity-100 lg:top-[183px] z-[0] right-0 w-[172px] h-[125px] lg:w-[387px] lg:h-[332.74px]"
+ >
+   <img src="./assets/images/footerimage2.png" alt="" />
+ </div>
 
-      <div
-        class="w-auto h-auto flex flex-col items-center gap-5 pb-[20px] pt-[30px] md:pt-[120px] justify-center"
-      >
-        <div class="relative z-[99] flex flex-row justify-between lg:gap-5">
-          <a
-            href="mailto:Alyinsoftwarehouse@gmail.com"
-            target="_blank"
-            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
-            aria-hidden="true"
-          >
-            <i
-              class="fa-solid fa-envelope text-[40px] lg:text-[48px] text-white hover:text-[#000]"
-            ></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/aliyn/"
-            target="_blank"
-            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
-            aria-hidden="true"
-          >
-            <i
-              class="fa-brands fa-linkedin text-[40px] lg:text-[48px] text-white hover:text-[#0077B5]"
-            ></i>
-          </a>
-          <a
-            href="https://wa.me/201004673894"
-            target="_blank"
-            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
-            aria-hidden="true"
-          >
-            <i
-              class="fa-brands fa-square-whatsapp text-[40px] lg:text-[48px] text-white hover:text-[#25D366]"
-            ></i>
-          </a>
+ <div
+   class="w-auto h-auto md:pt-[20px] flex pb-[25px] flex-col items-center gap-5 justify-center"
+ >
+   <div class="relative z-[99] flex flex-row justify-between lg:gap-5">
+     <a
+       href="mailto:Alyinsoftwarehouse@gmail.com"
+       target="_blank"
+       class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+     >
+       <i
+         class="fa-solid fa-envelope text-[40px] lg:text-[48px] text-white hover:text-[#000]"
+       ></i>
+     </a>
+     <a
+       href="https://www.linkedin.com/company/aliyn/"
+       target="_blank"
+       class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+     >
+       <i
+         class="fa-brands fa-linkedin text-[40px] lg:text-[48px] text-white hover:text-[#0077B5]"
+       ></i>
+     </a>
+     <a
+       href="https://wa.me/201004673894"
+       target="_blank"
+       class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+     >
+       <i
+         class="fa-brands fa-square-whatsapp text-[40px] lg:text-[48px] text-white hover:text-[#25D366]"
+       ></i>
+     </a>
 
-          <a
-            href="https://www.facebook.com/profile.php?id=100094593168418&mibextid=LQQJ4d"
-            target="_blank"
-            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
-            aria-hidden="true"
-          >
-            <i
-              class="text-[40px] lg:text-[48px] fa-brands fa-square-facebook text-white hover:text-[#4267B2]"
-            ></i>
-          </a>
-          <a
-            href="https://instagram.com/aliyn_softwarehouse?igshid=MzRlODBiNWFlZA=="
-            target="_blank"
-            class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
-            aria-hidden="true"
-          >
-            <i
-              class="text-[40px] lg:text-[48px] fa-brands fa-instagram text-white hover:text-[#C13584]"
-            ></i>
-          </a>
-        </div>
-        <div>
-          <p
-            class="text-white text-[15px] lg:text-[22px] font-normal font-['Red Hat Display']"
-          >
-            Alyinsoftwarehouse@gmail.com
-          </p>
-        </div>
-      </div>
-    </div>
+     <a
+       href="https://www.facebook.com/profile.php?id=100094593168418&mibextid=LQQJ4d"
+       target="_blank"
+       class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+     >
+       <i
+         class="text-[40px] lg:text-[48px] fa-brands fa-square-facebook text-white hover:text-[#4267B2]"
+       ></i>
+     </a>
+     <a
+       href="https://instagram.com/aliyn_softwarehouse?igshid=MzRlODBiNWFlZA=="
+       target="_blank"
+       class="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] p-2.5 justify-start items-start gap-2.5 inline-flex"
+     >
+       <i
+         class="text-[40px] lg:text-[48px] fa-brands fa-instagram text-white hover:text-[#C13584]"
+       ></i>
+     </a>
+   </div>
+   <div>
+     <p
+       class="text-white text-[15px] lg:text-[28px] font-normal font-['Red Hat Display']"
+     >
+       Alyinsoftwarehouse@gmail.com
+     </p>
+   </div>
+ </div>
+</div>
     </div>
 
     <script src="./js/nav.js"></script>

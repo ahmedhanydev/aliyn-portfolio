@@ -44,6 +44,10 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
       spaceBetween: 25,
     },
+    1500: {
+      slidesPerView: 2,
+      spaceBetween: 200,
+    },
   },
   // Navigation arrows
   navigation: {
